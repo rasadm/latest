@@ -12,22 +12,186 @@
   --rasadm-primary: #007acc;
   --rasadm-accent: #00d4aa;
   --rasadm-dark: #2d3748;
+  --rasadm-light: #f8f9fa;
 }
 
-/* Simple button customization */
+/* Enhanced Header */
+.masthead {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 122, 204, 0.1);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.masthead .site-title {
+  color: var(--rasadm-primary) !important;
+  font-weight: 700 !important;
+  font-size: 1.5em !important;
+}
+
+/* Hero Section Enhancements */
+.page__hero--overlay {
+  margin-bottom: 2em;
+}
+
+.page__title {
+  font-size: 3.5em !important;
+  font-weight: 700 !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
+}
+
+.page__lead {
+  font-size: 1.25em !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+}
+
+/* Button Styling */
 .btn--primary {
   background-color: var(--rasadm-primary) !important;
   border-color: var(--rasadm-primary) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 0.75em 1.5em !important;
+  border-radius: 25px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 12px rgba(0, 122, 204, 0.3) !important;
 }
 
 .btn--primary:hover {
   background-color: #0056b3 !important;
   border-color: #0056b3 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(0, 122, 204, 0.4) !important;
 }
 
-/* Site title color */
-.masthead .site-title {
+.btn--large {
+  font-size: 1.1em !important;
+  padding: 1em 2em !important;
+}
+
+/* Feature Cards Enhancement */
+.feature__wrapper .feature__item {
+  margin-bottom: 2em;
+}
+
+.feature__item .archive__item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.feature__item .archive__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.feature__item .archive__item-teaser img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.feature__item .archive__item-title {
+  color: var(--rasadm-dark) !important;
+  font-size: 1.3em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.feature__item .archive__item-excerpt {
+  color: #666 !important;
+  line-height: 1.6 !important;
+}
+
+/* Navigation Enhancements */
+.greedy-nav a {
+  transition: color 0.3s ease !important;
+  font-weight: 500 !important;
+}
+
+.greedy-nav a:hover {
   color: var(--rasadm-primary) !important;
+}
+
+.greedy-nav .visible-links a:before {
+  background: var(--rasadm-primary) !important;
+}
+
+/* Content Typography */
+h2 {
+  color: var(--rasadm-dark) !important;
+  border-bottom: 2px solid var(--rasadm-accent) !important;
+  padding-bottom: 0.5em !important;
+  margin: 2em 0 1em 0 !important;
+}
+
+h3 {
+  color: var(--rasadm-dark) !important;
+  margin: 1.5em 0 0.75em 0 !important;
+}
+
+/* Footer Styling */
+.page__footer {
+  background: var(--rasadm-dark) !important;
+  color: white !important;
+  margin-top: 3em !important;
+}
+
+.page__footer a {
+  color: var(--rasadm-accent) !important;
+}
+
+.page__footer a:hover {
+  color: white !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page__title {
+    font-size: 2.5em !important;
+  }
+  
+  .page__lead {
+    font-size: 1.1em !important;
+  }
+  
+  .btn--large {
+    font-size: 1em !important;
+    padding: 0.8em 1.5em !important;
+  }
+  
+  .feature__wrapper {
+    margin-bottom: 1em;
+  }
+}
+
+/* Custom Content Sections */
+.simple-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.simple-card {
+  background: var(--rasadm-light);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--rasadm-primary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.simple-card:hover {
+  transform: translateY(-3px);
+}
+
+.simple-card h3 {
+  margin-top: 0;
+  color: var(--rasadm-dark);
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
 }
 
 /* Simple responsive grid for custom content */
@@ -57,12 +221,6 @@
 }
 
 /* Enhanced Typography */
-.page__title {
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  line-height: 1.2;
-}
-
 .page__meta {
   font-size: 0.8em;
   color: #6c757d;
@@ -77,47 +235,6 @@
   &:hover {
     background-color: lighten(#2d3748, 10%);
     border-color: lighten(#2d3748, 10%);
-  }
-}
-
-/* Enhanced Header Styles */
-.masthead {
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-/* Navigation Enhancements */
-.greedy-nav a {
-  transition: color 0.3s ease;
-  
-  &:hover {
-    color: var(--rasadm-primary);
-  }
-}
-
-.greedy-nav .visible-links a:before {
-  background: var(--rasadm-primary);
-}
-
-/* Content Area Enhancements */
-.page__content {
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--rasadm-dark);
-  }
-  
-  h2 {
-    border-bottom: 2px solid var(--rasadm-accent);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  blockquote {
-    border-left: 4px solid var(--rasadm-primary);
-    background: var(--rasadm-light);
-    padding: 1rem 1.5rem;
-    margin: 2rem 0;
-    font-style: italic;
   }
 }
 
@@ -140,26 +257,6 @@
   color: #4a5568;
   font-size: 0.9em;
   line-height: 1.6;
-}
-
-/* Feature Row Enhancements */
-.feature__wrapper {
-  .feature__item {
-    .archive__item-teaser {
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease;
-      
-      &:hover {
-        transform: translateY(-2px);
-      }
-    }
-    
-    .archive__item-title {
-      color: var(--rasadm-dark);
-    }
-  }
 }
 
 /* Author Profile Enhancements */
@@ -187,24 +284,6 @@
   .nav__sub-title {
     font-weight: 600;
     color: var(--rasadm-dark);
-  }
-}
-
-/* Footer Enhancements */
-.page__footer {
-  background-color: var(--rasadm-dark);
-  color: white;
-  
-  .page__footer-copyright {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  
-  a {
-    color: var(--rasadm-accent);
-    
-    &:hover {
-      color: white;
-    }
   }
 }
 

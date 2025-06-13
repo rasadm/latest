@@ -12,7 +12,7 @@ header:
       class: "btn--primary btn--large"
     - label: "Strategic Analysis"
       url: "/analysis/"
-      class: "btn--inverse btn--large"
+      class: "btn--primary btn--large"
   caption: "AI-Powered Content Automation Intelligence"
 excerpt: "Your premier source for breaking news, expert insights, and strategic analysis in the rapidly evolving world of AI-powered content automation and marketing technology."
 
@@ -87,4 +87,20 @@ Large-scale content operations, organizational transformation, and ROI optimizat
 
 ---
 
-## Recent Posts 
+## Recent Posts
+
+{% assign recent_posts = site.posts | limit: 3 %}
+{% if recent_posts.size > 0 %}
+<div class="simple-grid">
+  {% for post in recent_posts %}
+  <div class="simple-card">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+    <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+    <a href="{{ post.url }}" class="btn btn--primary btn--small">Read More</a>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<p>No posts available yet. Check back soon for the latest AI marketing insights!</p>
+{% endif %} 
