@@ -1,0 +1,72 @@
+# Site settings
+title: "RasaDM News Hub"
+description: "Breaking news, insights, and analysis on AI-powered content automation and marketing technology trends"
+baseurl: ""
+url: "https://yourusername.github.io" # Replace with your actual GitHub Pages URL
+
+# Author information
+author:
+  name: "RasaDM Editorial Team"
+  email: "news@rasadm.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Theme
+theme: minima
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "RasaDM Editorial Team"
+      categories: ["AI News", "Marketing Technology"]
+
+# SEO settings
+logo: "/assets/images/rasadm-logo.png"
+twitter:
+  username: rasadm
+  card: summary_large_image
+
+# Social links
+linkedin_username: rasadm
+github_username: rasadm
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Include
+include:
+  - _pages
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Analytics (replace with your tracking ID)
+google_analytics: UA-XXXXXXXXX-X 
