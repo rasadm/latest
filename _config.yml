@@ -12,8 +12,8 @@ highlighter: rouge
 permalink: /:year/:month/:day/:title/
 
 # Theme - Using minimal-mistakes for better design
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: "default"
 
 # Plugins (GitHub Pages compatible)
 plugins:
@@ -26,7 +26,7 @@ plugins:
 # Site Author
 author:
   name: "RasaDM Team"
-  avatar: "/assets/images/rasadm-logo.png"
+  avatar: "https://via.placeholder.com/200x200/007acc/ffffff?text=RasaDM"
   bio: "AI-powered content automation experts delivering strategic intelligence for marketing professionals."
   email: "news@rasadm.com"
   links:
@@ -114,8 +114,6 @@ defaults:
       share: true
       related: true
       show_date: true
-      sidebar:
-        nav: "main"
   # _pages
   - scope:
       path: "_pages"
@@ -123,8 +121,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-      sidebar:
-        nav: "main"
 
 # Analytics
 analytics:
@@ -142,7 +138,7 @@ twitter:
   username: rasadm
   card: summary_large_image
 
-og_image: "/assets/images/rasadm-social.png"
+og_image: "https://via.placeholder.com/1200x630/007acc/ffffff?text=RasaDM+News+Hub"
 
 # Site Navigation
 main:

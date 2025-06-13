@@ -10,10 +10,50 @@
 /* Brand Colors */
 :root {
   --rasadm-primary: #007acc;
-  --rasadm-secondary: #667eea;
   --rasadm-accent: #00d4aa;
   --rasadm-dark: #2d3748;
-  --rasadm-light: #f8f9fa;
+}
+
+/* Simple button customization */
+.btn--primary {
+  background-color: var(--rasadm-primary) !important;
+  border-color: var(--rasadm-primary) !important;
+}
+
+.btn--primary:hover {
+  background-color: #0056b3 !important;
+  border-color: #0056b3 !important;
+}
+
+/* Site title color */
+.masthead .site-title {
+  color: var(--rasadm-primary) !important;
+}
+
+/* Simple responsive grid for custom content */
+.simple-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.simple-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--rasadm-primary);
+}
+
+.simple-card h3 {
+  margin-top: 0;
+  color: var(--rasadm-dark);
+}
+
+@media (max-width: 768px) {
+  .simple-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Enhanced Typography */
@@ -30,16 +70,6 @@
 }
 
 /* Custom Button Styles */
-.btn--primary {
-  background-color: var(--rasadm-primary);
-  border-color: var(--rasadm-primary);
-  
-  &:hover {
-    background-color: darken(#007acc, 10%);
-    border-color: darken(#007acc, 10%);
-  }
-}
-
 .btn--inverse {
   background-color: var(--rasadm-dark);
   border-color: var(--rasadm-dark);
@@ -55,12 +85,6 @@
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.site-title {
-  font-weight: 700;
-  font-size: 1.4em;
-  color: var(--rasadm-primary);
 }
 
 /* Navigation Enhancements */

@@ -3,8 +3,6 @@ layout: archive
 title: "Strategic Analysis"
 permalink: /analysis/
 author_profile: true
-sidebar:
-  nav: "analysis"
 ---
 
 # Strategic Analysis & Market Intelligence

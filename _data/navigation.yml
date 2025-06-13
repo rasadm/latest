@@ -1,14 +1,10 @@
 main:
   - title: "Home"
     url: /
-  - title: "Latest News"
+  - title: "News"
     url: /news/
   - title: "Analysis"
     url: /analysis/
-  - title: "Insights"
-    url: /insights/
-  - title: "Trends"
-    url: /trends/
   - title: "About"
     url: /about/
   - title: "Archive"

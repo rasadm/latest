@@ -3,9 +3,9 @@ layout: splash
 title: "RasaDM News Hub"
 description: "Stay ahead of the curve with breaking news, expert insights, and in-depth analysis on AI-powered content automation and marketing technology trends."
 header:
-  overlay_color: "#2d3748"
+  overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/ai-marketing-hero.jpg
+  overlay_image: https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80
   actions:
     - label: "Latest News"
       url: "/news/"
@@ -17,21 +17,21 @@ header:
 excerpt: "Your premier source for breaking news, expert insights, and strategic analysis in the rapidly evolving world of AI-powered content automation and marketing technology."
 
 feature_row:
-  - image_path: /assets/images/breaking-news.jpg
+  - image_path: https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80
     alt: "Breaking Industry News"
     title: "🚀 Breaking Industry News"
     excerpt: "Get the latest developments in AI content automation, marketing technology platforms, and industry-shaping announcements before they become mainstream."
     url: "/news/"
     btn_label: "Read Latest News"
     btn_class: "btn--primary"
-  - image_path: /assets/images/strategic-analysis.jpg
+  - image_path: https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80
     alt: "Strategic Analysis"
     title: "📊 Strategic Analysis"
     excerpt: "Deep-dive analysis of market trends, competitive dynamics, and technological breakthroughs that impact content automation and marketing effectiveness."
     url: "/analysis/"
     btn_label: "View Analysis"
     btn_class: "btn--primary"
-  - image_path: /assets/images/actionable-insights.jpg
+  - image_path: https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80
     alt: "Actionable Insights"
     title: "🎯 Actionable Insights"
     excerpt: "Research-backed recommendations and strategic guidance to help you leverage AI technologies for competitive advantage."
@@ -40,7 +40,7 @@ feature_row:
     btn_class: "btn--primary"
 
 feature_row2:
-  - image_path: /assets/images/future-trends.jpg
+  - image_path: https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80
     alt: "Future Trends"
     title: "🔮 Future Trends & Predictions"
     excerpt: "Forward-looking perspectives on emerging technologies, regulatory developments, and market shifts that will shape the industry. Stay ahead with our expert forecasting and trend analysis."
@@ -67,69 +67,24 @@ feature_row2:
 
 ## Featured Coverage Areas
 
-<div class="coverage-grid">
-  <div class="coverage-item">
-    <h3>🤖 AI Content Generation</h3>
-    <p>Latest developments in automated content creation, GPT technologies, and AI writing tools</p>
-  </div>
-  <div class="coverage-item">
-    <h3>🔧 MarTech Platforms</h3>
-    <p>Marketing technology platform updates, integrations, and strategic developments</p>
-  </div>
-  <div class="coverage-item">
-    <h3>📈 Predictive Analytics</h3>
-    <p>Advanced analytics, AI-driven insights, and performance optimization strategies</p>
-  </div>
-  <div class="coverage-item">
-    <h3>🌐 Cross-Channel Orchestration</h3>
-    <p>Multi-platform content strategies and unified marketing automation solutions</p>
-  </div>
-  <div class="coverage-item">
-    <h3>⚖️ AI Governance & Ethics</h3>
-    <p>Regulatory developments, ethical considerations, and compliance in AI marketing</p>
-  </div>
-  <div class="coverage-item">
-    <h3>🏢 Enterprise Strategy</h3>
-    <p>Large-scale content operations, organizational transformation, and ROI optimization</p>
-  </div>
-</div>
+### 🤖 AI Content Generation
+Latest developments in automated content creation, GPT technologies, and AI writing tools
+
+### 🔧 MarTech Platforms
+Marketing technology platform updates, integrations, and strategic developments
+
+### 📈 Predictive Analytics
+Advanced analytics, AI-driven insights, and performance optimization strategies
+
+### 🌐 Cross-Channel Orchestration
+Multi-platform content strategies and unified marketing automation solutions
+
+### ⚖️ AI Governance & Ethics
+Regulatory developments, ethical considerations, and compliance in AI marketing
+
+### 🏢 Enterprise Strategy
+Large-scale content operations, organizational transformation, and ROI optimization
 
 ---
 
-## Recent Posts
-
-<!-- This will automatically display recent posts -->
-
-<style>
-.coverage-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.coverage-item {
-  background: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid #007acc;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.coverage-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.coverage-item h3 {
-  margin-top: 0;
-  color: #2d3748;
-  font-size: 1.1rem;
-}
-
-.coverage-item p {
-  margin-bottom: 0;
-  color: #4a5568;
-  line-height: 1.6;
-}
-</style> 
+## Recent Posts 

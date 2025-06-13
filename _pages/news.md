@@ -3,8 +3,6 @@ layout: archive
 title: "Latest News"
 permalink: /news/
 author_profile: true
-sidebar:
-  nav: "news"
 ---
 
 # Breaking AI Marketing News
