@@ -1,8 +1,7 @@
 ---
-layout: archive
+layout: page
 title: "Content Archive"
 permalink: /archive/
-author_profile: true
 ---
 
 # Content Archive

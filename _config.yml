@@ -3,51 +3,25 @@ title: "RasaDM News Hub"
 description: "Latest insights, trends, and breakthroughs in AI-powered content automation and marketing technology"
 baseurl: ""
 url: "https://rasadm.github.io/latest"
-author: "RasaDM Team"
-email: "news@rasadm.com"
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:year/:month/:day/:title/
 
-# Theme - Using minimal-mistakes for better design
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-minimal_mistakes_skin: "air"
+# Use a simple, reliable theme
+theme: minima
 
-# Plugins (GitHub Pages compatible)
+# Plugins (GitHub Pages compatible only)
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-include-cache
 
 # Site Author
 author:
   name: "RasaDM Team"
-  avatar: "https://via.placeholder.com/200x200/007acc/ffffff?text=RasaDM"
-  bio: "AI-powered content automation experts delivering strategic intelligence for marketing professionals."
   email: "news@rasadm.com"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/rasadm"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://rasadm.com"
-
-# Site Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/rasadm"
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
 
 # Exclude from processing
 exclude:
@@ -55,87 +29,19 @@ exclude:
   - Gemfile.lock
   - vendor/
   - README.md
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - node_modules
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - package.json
-  - Rakefile
-  - tmp
 
 # Collections
 collections:
   posts:
     output: true
-    permalink: /:year/:month/:day/:title/
-
-# Pagination
-paginate: 6
-paginate_path: /page:num/
-
-# Archives
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-# HTML Compression
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
-      show_date: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
-# Analytics
-analytics:
-  provider: false
-
-# Social Sharing
-social:
-  type: Organization
-  name: RasaDM
-  links:
-    - "https://github.com/rasadm"
 
 # SEO
 twitter:
   username: rasadm
-  card: summary_large_image
 
-og_image: "https://via.placeholder.com/1200x630/007acc/ffffff?text=RasaDM+News+Hub" 
+# Header pages
+header_pages:
+  - _pages/about.md
+  - _pages/news.md
+  - _pages/analysis.md
+  - _pages/archive.md 

@@ -1,8 +1,7 @@
 ---
-layout: archive
+layout: page
 title: "Strategic Analysis"
 permalink: /analysis/
-author_profile: true
 ---
 
 # Strategic Analysis & Market Intelligence

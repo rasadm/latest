@@ -1,20 +1,8 @@
 ---
 title: "Introducing RasaDM: The Future of AI-Powered Content Automation"
-meta_title: "Introducing RasaDM: The Future of AI-Powered Content Automation | RasaDM News Hub"
-meta_description: "Discover RasaDM, the revolutionary AI-powered content automation platform that's transforming how businesses create, manage, and optimize their content strategies across all channels."
 date: 2025-01-13 09:00:00 +0000
 categories: ["Platform Introduction", "AI Technology"]
 tags: ["rasadm", "content automation", "ai platform", "marketing technology"]
-keywords: ["RasaDM platform", "AI content automation", "content management", "marketing automation", "AI-powered content", "cross-channel content", "content strategy automation"]
-layout: single
-author_profile: true
-read_time: true
-share: true
-related: true
-header:
-  teaser: /assets/images/rasadm-platform-teaser.jpg
-  overlay_image: /assets/images/rasadm-platform-hero.jpg
-  overlay_filter: 0.4
 ---
 
 # Introducing RasaDM: The Future of AI-Powered Content Automation
