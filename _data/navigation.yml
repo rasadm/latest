@@ -1,0 +1,40 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Latest News"
+    url: /news/
+  - title: "Analysis"
+    url: /analysis/
+  - title: "Insights"
+    url: /insights/
+  - title: "Trends"
+    url: /trends/
+  - title: "About"
+    url: /about/
+  - title: "Archive"
+    url: /archive/
+
+# Sidebar navigation for specific sections
+news:
+  - title: "News Categories"
+    children:
+      - title: "Breaking News"
+        url: /categories/breaking-news/
+      - title: "AI Platforms"
+        url: /categories/ai-platforms/
+      - title: "MarTech Updates"
+        url: /categories/martech/
+      - title: "Industry Reports"
+        url: /categories/reports/
+
+analysis:
+  - title: "Analysis Types"
+    children:
+      - title: "Market Analysis"
+        url: /categories/market-analysis/
+      - title: "Technology Deep-Dives"
+        url: /categories/tech-analysis/
+      - title: "Competitive Intelligence"
+        url: /categories/competitive/
+      - title: "Strategic Insights"
+        url: /categories/strategy/ 

@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   RasaDM News Hub Custom Styles
+   ========================================================================== */
+
+/* Brand Colors */
+:root {
+  --rasadm-primary: #007acc;
+  --rasadm-secondary: #667eea;
+  --rasadm-accent: #00d4aa;
+  --rasadm-dark: #2d3748;
+  --rasadm-light: #f8f9fa;
+}
+
+/* Enhanced Typography */
+.page__title {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.page__meta {
+  font-size: 0.8em;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+/* Custom Button Styles */
+.btn--primary {
+  background-color: var(--rasadm-primary);
+  border-color: var(--rasadm-primary);
+  
+  &:hover {
+    background-color: darken(#007acc, 10%);
+    border-color: darken(#007acc, 10%);
+  }
+}
+
+.btn--inverse {
+  background-color: var(--rasadm-dark);
+  border-color: var(--rasadm-dark);
+  
+  &:hover {
+    background-color: lighten(#2d3748, 10%);
+    border-color: lighten(#2d3748, 10%);
+  }
+}
+
+/* Enhanced Header Styles */
+.masthead {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.4em;
+  color: var(--rasadm-primary);
+}
+
+/* Navigation Enhancements */
+.greedy-nav a {
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: var(--rasadm-primary);
+  }
+}
+
+.greedy-nav .visible-links a:before {
+  background: var(--rasadm-primary);
+}
+
+/* Content Area Enhancements */
+.page__content {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--rasadm-dark);
+  }
+  
+  h2 {
+    border-bottom: 2px solid var(--rasadm-accent);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  blockquote {
+    border-left: 4px solid var(--rasadm-primary);
+    background: var(--rasadm-light);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+  }
+}
+
+/* Archive and Taxonomy Pages */
+.archive__item-title {
+  font-size: 1.1em;
+  line-height: 1.3;
+  
+  a {
+    color: var(--rasadm-dark);
+    text-decoration: none;
+    
+    &:hover {
+      color: var(--rasadm-primary);
+    }
+  }
+}
+
+.archive__item-excerpt {
+  color: #4a5568;
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+/* Feature Row Enhancements */
+.feature__wrapper {
+  .feature__item {
+    .archive__item-teaser {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-2px);
+      }
+    }
+    
+    .archive__item-title {
+      color: var(--rasadm-dark);
+    }
+  }
+}
+
+/* Author Profile Enhancements */
+.author__content {
+  .author__name {
+    color: var(--rasadm-dark);
+    font-weight: 600;
+  }
+  
+  .author__bio {
+    color: #4a5568;
+    font-size: 0.9em;
+    line-height: 1.6;
+  }
+}
+
+/* Sidebar Enhancements */
+.sidebar .nav__list {
+  .nav__title {
+    background-color: var(--rasadm-primary);
+    color: white;
+    font-weight: 600;
+  }
+  
+  .nav__sub-title {
+    font-weight: 600;
+    color: var(--rasadm-dark);
+  }
+}
+
+/* Footer Enhancements */
+.page__footer {
+  background-color: var(--rasadm-dark);
+  color: white;
+  
+  .page__footer-copyright {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  a {
+    color: var(--rasadm-accent);
+    
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .coverage-grid,
+  .news-categories,
+  .analysis-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .page__hero {
+    .page__title {
+      font-size: 2rem;
+    }
+  }
+}
+
+/* Loading Animation */
+.page__content img {
+  transition: opacity 0.3s ease;
+}
+
+/* Focus States for Accessibility */
+.btn:focus,
+a:focus {
+  outline: 2px solid var(--rasadm-accent);
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .masthead,
+  .page__footer,
+  .sidebar,
+  .page__share,
+  .page__related {
+    display: none;
+  }
+  
+  .page__content {
+    max-width: none;
+    margin: 0;
+  }
+} 
