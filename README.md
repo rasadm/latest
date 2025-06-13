@@ -1,5 +1,11 @@
 # RasaDM News Hub
 
+Latest insights, trends, and breakthroughs in AI-powered content automation and marketing technology.
+
+## GitHub Pages Setup
+
+This site is deployed using GitHub Pages with Jekyll.
+
 Welcome to **RasaDM News Hub** - your premier source for AI and marketing technology intelligence. This Jekyll-powered blog delivers breaking news, expert insights, and strategic analysis on AI-powered content automation and marketing technology trends.
 
 ## 🚀 Quick Start
