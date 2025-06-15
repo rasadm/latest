@@ -4,8 +4,8 @@
       "id": "cfc06546-2f31-4977-9408-0b8dfc7bcf40",
       "name": "AgenticAI",
       "url": "https://agenticaiupdates.space/",
-      "username": "iamalisafari@gmail.com",
-      "password": "iFCs 1Sly I0DD pHKS RTgK Ul7B",
+      "username": "${WP_USERNAME}",
+      "password": "${WP_PASSWORD}",
       "description": "AgenticAI",
       "is_active": true,
       "created_date": "2025-06-14T17:02:40.783374",
@@ -63,5 +63,5 @@
     "language_specific_research": true
   },
   "_note": "Replace ${VARIABLE} placeholders with actual values or set environment variables. This file should not contain real credentials in production.",
-  "claude_api_key": "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"
+  "claude_api_key": "${ANTHROPIC_API_KEY}"
 }
