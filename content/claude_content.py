@@ -23,8 +23,10 @@ class ClaudeContentGenerator:
         # Available Claude models (using correct model names)
         self.available_models = {
             "claude-sonnet-4": "claude-sonnet-4-20250514",      # $3/$15 per MTok - Latest Sonnet 4
+            "claude-4-sonnet": "claude-sonnet-4-20250514",      # Alias for compatibility
             "claude-opus-4": "claude-opus-4-20250514",          # $15/$75 per MTok - Most powerful
             "claude-3.5-sonnet": "claude-3-5-sonnet-20241022",  # $3/$15 per MTok - Previous stable
+            "claude-3-5-sonnet": "claude-3-5-sonnet-20241022",  # Alias for compatibility
             "claude-3.5-sonnet-old": "claude-3-5-sonnet-20240620",  # $3/$15 per MTok - Previous
             "claude-3-haiku": "claude-3-haiku-20240307"         # $0.25/$1.25 per MTok - Fast & cheap
         }
