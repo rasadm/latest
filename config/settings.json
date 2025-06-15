@@ -1,0 +1,67 @@
+{
+  "wordpress_websites": {
+    "cfc06546-2f31-4977-9408-0b8dfc7bcf40": {
+      "id": "cfc06546-2f31-4977-9408-0b8dfc7bcf40",
+      "name": "AgenticAI",
+      "url": "https://agenticaiupdates.space/",
+      "username": "iamalisafari@gmail.com",
+      "password": "iFCs 1Sly I0DD pHKS RTgK Ul7B",
+      "description": "AgenticAI",
+      "is_active": true,
+      "created_date": "2025-06-14T17:02:40.783374",
+      "last_tested": "",
+      "test_status": "unknown",
+      "language": "english"
+    }
+  },
+  "default_website": "cfc06546-2f31-4977-9408-0b8dfc7bcf40",
+  "auto_publish": true,
+  "backup_enabled": true,
+  "max_retries": 3,
+  "timeout": 30,
+  "image_quality": 85,
+  "seo_enabled": true,
+  "analytics_enabled": false,
+  "default_language": "english",
+  "supported_languages": [
+    "english",
+    "farsi",
+    "spanish"
+  ],
+  "language_specific_settings": {
+    "english": {
+      "enabled": true,
+      "cultural_context": "western_business",
+      "seo_optimization": true,
+      "content_templates": true
+    },
+    "farsi": {
+      "enabled": true,
+      "cultural_context": "persian_islamic",
+      "seo_optimization": true,
+      "content_templates": true,
+      "rtl_support": true,
+      "persian_numerals": true
+    },
+    "spanish": {
+      "enabled": true,
+      "cultural_context": "hispanic_latin",
+      "seo_optimization": true,
+      "content_templates": true,
+      "regional_variants": [
+        "spain",
+        "mexico",
+        "argentina",
+        "colombia"
+      ]
+    }
+  },
+  "multilingual_features": {
+    "auto_language_detection": true,
+    "cross_language_seo": true,
+    "cultural_adaptation": true,
+    "language_specific_research": true
+  },
+  "_note": "Replace ${VARIABLE} placeholders with actual values or set environment variables. This file should not contain real credentials in production.",
+  "claude_api_key": "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"
+}

@@ -1,0 +1,32 @@
+# Enhanced Research LLM Generator Configuration
+# This file demonstrates all available configuration options
+
+# Content generation settings
+target_word_count: 3500
+use_local_llm: true
+default_llm_provider: "deepseek"  # options: deepseek, claude, llama
+output_directory: "generated_content"
+language: "english"  # options: english, farsi, spanish
+
+# Research limits (to control processing time and costs)
+max_keywords_per_topic: 5
+max_statistics: 10
+max_insights: 8
+max_articles: 6
+
+# Optional: Custom prompt template file
+# prompt_template_file: "prompts/custom_template.txt"
+
+# Optional: Custom topics configuration file
+# topics_config_file: "topics/custom_topics.json"
+
+# Example custom topics (if using topics_config_file)
+# Format for custom_topics.json:
+# {
+#   "Custom Topic 1": [
+#     "keyword1", "keyword2", "keyword3"
+#   ],
+#   "Custom Topic 2": [
+#     "keyword4", "keyword5", "keyword6"
+#   ]
+# } 

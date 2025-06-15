@@ -1,0 +1,113 @@
+{
+  "f8434b89": {
+    "id": "f8434b89",
+    "name": "how to use AgenticAI for social media marketing",
+    "description": "how to use AgenticAI for social media marketing",
+    "keywords": [
+      "AgenticAI for social media marketing",
+      "AgenticAI for social media",
+      "AgenticAI for social",
+      "how to use AgenticAI"
+    ],
+    "target_count": 5,
+    "content_type": "claude",
+    "llm_model": "claude-sonnet-4-20250514",
+    "research_sites": [],
+    "template_style": "random",
+    "created_date": "2025-06-14T18:27:04.575510",
+    "completed_count": 5,
+    "status": "completed",
+    "output_directory": "projects/project_f8434b89_how_to_use_AgenticAI_for_social_media_marketing_english",
+    "seo_focus": [
+      "AgenticAI for social media marketing"
+    ],
+    "target_audience": "Marketing professionals",
+    "content_length": "long",
+    "publishing_schedule": "immediate",
+    "publishing_interval": 5,
+    "website_id": "cfc06546-2f31-4977-9408-0b8dfc7bcf40",
+    "language": "english",
+    "cultural_context": "western_business"
+  },
+  "1b8abb65": {
+    "id": "1b8abb65",
+    "name": "سوشال مديا در عصر جديد",
+    "description": "سوشال مديا در عصر جديد",
+    "keywords": [
+      "سوشال مديا"
+    ],
+    "target_count": 1,
+    "content_type": "claude",
+    "llm_model": "claude-sonnet-4-20250514",
+    "research_sites": [],
+    "template_style": "random",
+    "created_date": "2025-06-14T18:35:18.426085",
+    "completed_count": 1,
+    "status": "completed",
+    "output_directory": "projects/project_1b8abb65_سوشال_مديا_در_عصر_جديد_farsi",
+    "seo_focus": [
+      "سوشال مديا"
+    ],
+    "target_audience": "",
+    "content_length": "long",
+    "publishing_schedule": "immediate",
+    "publishing_interval": 5,
+    "website_id": "cfc06546-2f31-4977-9408-0b8dfc7bcf40",
+    "language": "farsi",
+    "cultural_context": "persian_islamic"
+  },
+  "c18668a4": {
+    "id": "c18668a4",
+    "name": "سوشال مديا در عصر جديد",
+    "description": "سوشال مديا در عصر جديد",
+    "keywords": [
+      "سوشال مديا در عصر جديد"
+    ],
+    "target_count": 1,
+    "content_type": "claude",
+    "llm_model": "claude-sonnet-4-20250514",
+    "research_sites": [],
+    "template_style": "random",
+    "created_date": "2025-06-14T19:08:45.162450",
+    "completed_count": 1,
+    "status": "completed",
+    "output_directory": "projects/project_c18668a4_سوشال_مديا_در_عصر_جديد_farsi",
+    "seo_focus": [
+      "سوشال مديا در عصر جديد"
+    ],
+    "target_audience": "Marketing professionals",
+    "content_length": "short",
+    "publishing_schedule": "immediate",
+    "publishing_interval": 3,
+    "website_id": "cfc06546-2f31-4977-9408-0b8dfc7bcf40",
+    "language": "farsi",
+    "cultural_context": "persian_islamic"
+  },
+  "a02d6759": {
+    "id": "a02d6759",
+    "name": "سئو سايت هاي فارسي و انگليسي با هوش مصنوعي",
+    "description": "Content project: سئو سايت هاي فارسي و انگليسي با هوش مصنوعي",
+    "keywords": [
+      "سئو با هوش مصنوعي"
+    ],
+    "target_count": 1,
+    "content_type": "claude",
+    "llm_model": "claude-sonnet-4-20250514",
+    "research_sites": [],
+    "template_style": "trend_analysis",
+    "created_date": "2025-06-14T20:15:00.738836",
+    "completed_count": 1,
+    "status": "completed",
+    "output_directory": "projects/project_a02d6759_سئو_سايت_هاي_فارسي_و_انگليسي_با_هوش_مصنوعي_farsi",
+    "seo_focus": [
+      "سئو"
+    ],
+    "target_audience": "",
+    "content_length": "long",
+    "publishing_schedule": "immediate",
+    "publishing_interval": 5,
+    "website_id": "cfc06546-2f31-4977-9408-0b8dfc7bcf40",
+    "language": "farsi",
+    "cultural_context": "persian_islamic"
+  }
+}

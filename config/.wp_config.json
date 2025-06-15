@@ -1,0 +1,7 @@
+{
+  "username": "${WP_USERNAME}",
+  "password": "${WP_PASSWORD}",
+  "token": "${WP_TOKEN}",
+  "setup_date": "2025-01-01T00:00:00.000000",
+  "_security_note": "This file should contain actual credentials only in production and should be excluded from version control. Use environment variables or secure credential management."
+}
