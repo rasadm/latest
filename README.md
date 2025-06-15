@@ -1,202 +1,122 @@
-# RasaDM News Hub
+# AI Content Management System v0.1.1
 
-Latest insights, trends, and breakthroughs in AI-powered content automation and marketing technology.
+🚀 **Major System Upgrade with Claude Sonnet 4**
 
-## GitHub Pages Setup
+An advanced AI-powered multilingual content management system with WordPress integration, featuring the latest Claude Sonnet 4 model for superior content generation.
 
-This site is deployed using GitHub Pages with Jekyll.
+## ✨ What's New in v0.1.1
 
-Welcome to **RasaDM News Hub** - your premier source for AI and marketing technology intelligence. This Jekyll-powered blog delivers breaking news, expert insights, and strategic analysis on AI-powered content automation and marketing technology trends.
+### 🤖 Claude Sonnet 4 Integration
+- **Latest AI Model**: Upgraded to `claude-sonnet-4-20250514` - Anthropic's most advanced model
+- **Enhanced Performance**: 64K token output support (vs 8K in previous models)
+- **Superior Quality**: Better reasoning, coding, and multilingual content generation
+- **Advanced Features**: Extended thinking, improved instruction following
+
+### 🎛️ Dashboard Improvements
+- **Resume Button**: Added resume functionality for paused projects
+- **Model Selection**: Updated with latest Claude models (Sonnet 4, Opus 4)
+- **Better Controls**: Enhanced project management interface
+- **Fixed Routing**: Resolved settings dashboard path issues
+
+### 🌍 Multilingual Excellence
+- **Enhanced Persian/Farsi**: Improved cultural context and SEO optimization
+- **Better Translation**: Advanced language-specific content templates
+- **Cultural Adaptation**: Context-aware content generation
+
+### 🔧 System Architecture
+- **Organized Structure**: Clean separation into core/, dashboards/, content/, publishing/
+- **Security**: Environment variables for API keys and credentials
+- **Stability**: Improved error handling and retry logic
 
 ## 🚀 Quick Start
 
-### Prerequisites
-- Ruby 2.7 or higher
-- Jekyll 4.3+
-- Git
-
-### Local Development Setup
-
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/rasadm-news-hub.git
-   cd rasadm-news-hub
+   git clone https://github.com/rasadm/latest.git
+   cd latest
    ```
 
-2. **Install dependencies**
+2. **Set up environment**
    ```bash
-   bundle install
+   copy env.example .env
+   # Edit .env with your API keys and credentials
    ```
 
-3. **Run the development server**
+3. **Install dependencies**
    ```bash
-   bundle exec jekyll serve
+   pip install -r requirements.txt
    ```
 
-4. **View your site**
-   Open `http://localhost:4000` in your browser
-
-### GitHub Pages Deployment
-
-This blog is configured to work seamlessly with GitHub Pages:
-
-1. **Enable GitHub Pages**
-   - Go to your repository settings
-   - Scroll to "Pages" section
-   - Select "Deploy from a branch"
-   - Choose `main` branch and `/ (root)` folder
-   - Click "Save"
-
-2. **Update configuration**
-   - Edit `_config.yml`
-   - Update the `url` field with your GitHub Pages URL
-   - Commit and push changes
-
-3. **Your blog will be live at**
-   `https://yourusername.github.io/repository-name`
-
-## 📝 Content Management
-
-### Adding New Posts
-
-1. **Create a new post file** in the `_posts` directory
-   ```
-   _posts/YYYY-MM-DD-post-title.md
+4. **Run the application**
+   ```bash
+   start_app.bat
    ```
 
-2. **Use the following front matter template:**
-   ```yaml
-   ---
-   title: "Your Post Title"
-   meta_title: "SEO Optimized Title | RasaDM News"
-   meta_description: "Brief description for SEO and social sharing"
-   keywords: ["keyword1", "keyword2", "keyword3"]
-   date: YYYY-MM-DD HH:MM:SS +0000
-   categories: ["AI News", "Marketing Technology"]
-   tags: ["ai", "content automation", "martech"]
-   ---
-   ```
+## 📋 Environment Variables
 
-3. **Write your content** using Markdown syntax
+Create a `.env` file with:
 
-### Content Guidelines
-
-- **Research-backed**: All content must include credible sources and verified data
-- **No fabrication**: Never create false statistics or unsubstantiated claims
-- **Academic standards**: Follow rigorous editorial standards
-- **Strategic focus**: Emphasize business impact and actionable insights
-- **RasaDM integration**: Naturally incorporate RasaDM branding and perspective
-
-## 🛠 Customization
-
-### Theme Customization
-
-The blog uses the Minima theme with custom styling:
-
-1. **Override theme files** by creating corresponding files in your repository
-2. **Custom CSS** can be added to `assets/css/style.scss`
-3. **Layout modifications** go in the `_layouts` directory
-
-### Configuration Options
-
-Key settings in `_config.yml`:
-
-```yaml
-title: "RasaDM News Hub"
-description: "Your site description"
-url: "https://yourusername.github.io"
-author:
-  name: "RasaDM Editorial Team"
-  email: "news@rasadm.com"
+```env
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+WP_USERNAME=your_wordpress_username
+WP_PASSWORD=your_wordpress_password
+UNSPLASH_API_KEY=your_unsplash_api_key_here
 ```
 
-### Analytics and SEO
+## 🎯 Features
 
-- **Google Analytics**: Update the `google_analytics` field in `_config.yml`
-- **SEO**: The site includes jekyll-seo-tag for optimal search engine optimization
-- **Social sharing**: Configured for Twitter Cards and Open Graph
+- **🤖 Claude Sonnet 4**: Latest AI model for superior content generation
+- **🌍 Multilingual**: English, Persian/Farsi, Spanish support
+- **📝 WordPress Integration**: Automated publishing and scheduling
+- **🎨 SEO Optimization**: Advanced SEO features and analytics
+- **📊 Project Management**: Comprehensive project tracking and control
+- **🔄 Content Automation**: Intelligent content generation workflows
+- **📱 Modern UI**: Clean, responsive dashboard interface
 
-## 📊 Features
-
-### Built-in Functionality
-
-- ✅ **Responsive design** - Mobile-friendly layout
-- ✅ **SEO optimized** - Meta tags, sitemaps, and structured data
-- ✅ **Social sharing** - Twitter Cards and Open Graph support
-- ✅ **RSS feed** - Automatic feed generation
-- ✅ **Pagination** - Organized post navigation
-- ✅ **Search engine friendly** - Clean URLs and proper markup
-
-### Plugins Included
-
-- `jekyll-feed` - RSS feed generation
-- `jekyll-sitemap` - XML sitemap
-- `jekyll-seo-tag` - SEO meta tags
-- `jekyll-paginate` - Post pagination
-
-## 📁 Project Structure
+## 🏗️ Architecture
 
 ```
-rasadm-news-hub/
-├── _config.yml          # Jekyll configuration
-├── _posts/              # Blog posts
-├── _layouts/            # Custom layouts (optional)
-├── _includes/           # Reusable components (optional)
-├── _sass/               # Custom styles (optional)
-├── assets/              # Images, CSS, JS
-├── _pages/              # Static pages
-├── Gemfile              # Ruby dependencies
-├── index.md             # Homepage
-└── README.md            # This file
+├── core/                 # Core system components
+├── dashboards/          # UI applications
+├── content/             # Content generation tools
+├── publishing/          # WordPress integration
+├── config/              # Configuration files
+├── docs/                # Documentation
+├── scripts/             # Utility scripts
+├── tests/               # Test files
+└── projects/            # Project data
 ```
 
-## 🚀 Publishing Workflow
+## 🔧 Technical Requirements
 
-### Recommended Process
+- **Python 3.11+**
+- **Anthropic API Key** (Claude Sonnet 4)
+- **WordPress Site** (for publishing)
+- **Windows** (batch files included)
 
-1. **Create content** locally in `_posts/`
-2. **Test locally** with `bundle exec jekyll serve`
-3. **Commit and push** to GitHub
-4. **GitHub Pages** automatically builds and deploys
+## 📖 Documentation
 
-### Content Categories
-
-Organize posts using these categories:
-- `AI News` - Breaking industry news
-- `Marketing Technology` - MarTech developments
-- `Industry Analysis` - Strategic insights
-- `Platform Updates` - Tool and platform news
-- `Research Reports` - Data-driven content
-
-## 🔧 Troubleshooting
-
-### Common Issues
-
-1. **Build failures**: Check `Gemfile` dependencies
-2. **Styling issues**: Verify CSS/Sass syntax
-3. **Plugin errors**: Ensure all plugins are listed in `_config.yml`
-4. **Deployment delays**: GitHub Pages can take 5-10 minutes to update
-
-### Support Resources
-
-- [Jekyll Documentation](https://jekyllrb.com/docs/)
-- [GitHub Pages Documentation](https://docs.github.com/en/pages)
-- [Minima Theme Guide](https://github.com/jekyll/minima)
-
-## 📄 License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+- [WordPress Setup Guide](docs/WORDPRESS_SETUP.md)
+- [Multilingual System Guide](docs/MULTILINGUAL_SYSTEM_GUIDE.md)
+- [Project Management Guide](docs/PROJECT_MANAGEMENT_GUIDE.md)
 
 ## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Test locally
-5. Submit a pull request
+4. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🆘 Support
+
+For support and questions:
+- Create an issue on GitHub
+- Check the documentation in the `docs/` folder
 
 ---
 
-**RasaDM News Hub** - Delivering intelligence for the AI-driven marketing future.
-
-For questions or support, contact the editorial team at news@rasadm.com 
+**Version 0.1.1** - Major upgrade with Claude Sonnet 4, enhanced multilingual support, and improved system architecture. 

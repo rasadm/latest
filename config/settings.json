@@ -1,0 +1,72 @@
+{
+  "anthropic": {
+    "api_key": "${ANTHROPIC_API_KEY}",
+    "model": "claude-sonnet-4-20250514",
+    "max_tokens": 4000,
+    "temperature": 0.7
+  },
+  "unsplash": {
+    "access_key": "${UNSPLASH_ACCESS_KEY}",
+    "secret_key": "${UNSPLASH_SECRET_KEY}"
+  },
+  "wordpress_websites": {
+    "cfc06546-2f31-4977-9408-0b8dfc7bcf40": {
+      "id": "cfc06546-2f31-4977-9408-0b8dfc7bcf40",
+      "name": "RasaDM Blog",
+      "url": "${WORDPRESS_URL}",
+      "username": "${WORDPRESS_USERNAME}",
+      "password": "${WORDPRESS_PASSWORD}",
+      "description": "AI Content Management Blog",
+      "is_active": true,
+      "created_date": "2025-06-14T17:02:40.783374",
+      "last_tested": "",
+      "test_status": "unknown",
+      "language": "english"
+    }
+  },
+  "default_website": "cfc06546-2f31-4977-9408-0b8dfc7bcf40",
+  "auto_publish": true,
+  "backup_enabled": true,
+  "max_retries": 3,
+  "timeout": 30,
+  "image_quality": 85,
+  "seo_enabled": true,
+  "analytics_enabled": false,
+  "default_language": "english",
+  "supported_languages": [
+    "english",
+    "farsi",
+    "arabic"
+  ],
+  "language_specific_settings": {
+    "english": {
+      "enabled": true,
+      "cultural_context": "western_business",
+      "seo_optimization": true,
+      "content_templates": true
+    },
+    "farsi": {
+      "enabled": true,
+      "cultural_context": "persian_islamic",
+      "seo_optimization": true,
+      "content_templates": true,
+      "rtl_support": true,
+      "persian_numerals": true
+    },
+    "arabic": {
+      "enabled": true,
+      "cultural_context": "arabic_islamic",
+      "seo_optimization": true,
+      "content_templates": true,
+      "rtl_support": true
+    }
+  },
+  "multilingual_features": {
+    "auto_language_detection": true,
+    "cross_language_seo": true,
+    "cultural_adaptation": true,
+    "language_specific_research": true
+  },
+  "claude_api_key": "${ANTHROPIC_API_KEY}",
+  "_note": "Replace ${VARIABLE} placeholders with actual values or set environment variables. This file should not contain real credentials in production."
+} 
